@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Good Morning ❤️</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="hearts">
+      <span>♡</span>
+      <span>♥</span>
+      <span>♡</span>
+      <span>♥</span>
+      <span>♡</span>
+      <span>♥</span>
+    </div>
+
+    <main class="container">
+      <section class="card">
+        <div class="morning">☀️ GOOD MORNING</div>
+
+        <h1>Good Morning, Beautiful ❤️</h1>
+
+        <p class="intro">
+          Before you start your day, here's a little song and a little reminder
+          that someone is wishing you a beautiful day. 🌷
+        </p>
+
+        <!-- CD -->
+        <div class="cd-area">
+          <div class="cd" id="cd">
+            <div class="cd-center">
+              <span>❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Song Information -->
+        <div class="song-info">
+          <h2 id="songTitle">Last Day on Earth</h2>
+          <p id="artist">Green Day</p>
+        </div>
+
+        <!-- Lyrics -->
+        <div class="lyrics-box">
+          <div class="music-note">♪</div>
+
+          <p id="lyrics">
+            Press play and let the music brighten your morning ❤️
+          </p>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container">
+          <span id="currentTime">0:00</span>
+
+          <input type="range" id="progress" value="0" min="0" max="100" />
+
+          <span id="duration">0:00</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+          <button onclick="previousSong()">⏮️</button>
+
+          <button class="play-button" onclick="toggleMusic()" id="playButton">
+            ▶️
+          </button>
+
+          <button onclick="nextSong()">⏭️</button>
+        </div>
+
+        <!-- Volume -->
+        <div class="volume">
+          <span>🔊</span>
+
+          <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.8"
+          />
+        </div>
+
+        <!-- Hidden audio -->
+        <audio id="music">
+          <source src="music.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="message">
+          <p>
+            "Whatever happens today, take it one step at a time. You are doing
+            better than you think." ❤️
+          </p>
+        </div>
+
+        <div class="signature">
+          — From someone wishing you a beautiful morning 🌷
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
